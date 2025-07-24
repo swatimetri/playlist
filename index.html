@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Playlist</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>🎵 Music Playlist</h2>
+
+    <ul id="playlist"></ul>
+
+    <p><strong>Now Playing:</strong> <span id="current-song">No songs</span></p>
+
+    <div class="controls">
+      <button onclick="prevSong()">⏮ Previous</button>
+      <button onclick="nextSong()">Next ⏭</button>
+    </div>
+
+    <div class="add-song">
+      <input type="text" id="new-song-input" placeholder="Add a new song" />
+      <button onclick="addSong()">➕ Add</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
